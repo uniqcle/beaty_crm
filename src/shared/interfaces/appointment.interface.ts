@@ -1,5 +1,3 @@
-
-
 export interface IAppointment {
     id: number;
     date: Date;
@@ -9,4 +7,4 @@ export interface IAppointment {
     canceled: boolean;
 }
 
-export type ActiveAppointment = Omit<IAppointment, 'canceled'>
+export type IActiveAppointment = Omit<IAppointment, "canceled">;
